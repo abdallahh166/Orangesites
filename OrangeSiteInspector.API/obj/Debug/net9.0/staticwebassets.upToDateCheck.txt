@@ -1,0 +1,2 @@
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.API\wwwroot\index.html
+wwwroot\index.html

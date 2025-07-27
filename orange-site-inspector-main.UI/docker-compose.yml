@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Frontend service
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:5000/api
+      - VITE_APP_ENV=production
+    depends_on:
+      - backend
+    networks:
+      - orange-network
+
+  # Backend service (if you want to run both together)
+  backend:
+    build:
+      context: ../OrangeSiteInspector.API
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=db;Database=OrangeSiteInspector;User Id=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true
+      - JWT_SECRET_KEY=your-super-secret-jwt-key-for-production
+    depends_on:
+      - db
+    networks:
+      - orange-network
+
+  # Database service
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_data:/var/opt/mssql
+    networks:
+      - orange-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - orange-network
+
+volumes:
+  mssql_data:
+  redis_data:
+
+networks:
+  orange-network:
+    driver: bridge 

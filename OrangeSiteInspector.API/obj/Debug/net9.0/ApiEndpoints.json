@@ -1,0 +1,2994 @@
+[
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetDashboardStats",
+    "RelativePath": "api/Admin/dashboard/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.DashboardStatsDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetAllOramaGroups",
+    "RelativePath": "api/Admin/orama/groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "CreateOramaGroup",
+    "RelativePath": "api/Admin/orama/groups",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetAllOramaItems",
+    "RelativePath": "api/Admin/orama/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "CreateOramaItem",
+    "RelativePath": "api/Admin/orama/items",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateOramaItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "AcceptVisit",
+    "RelativePath": "api/Admin/visits/{visitId}/accept",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "RejectVisit",
+    "RelativePath": "api/Admin/visits/{visitId}/reject",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetVisitsByDateRange",
+    "RelativePath": "api/Admin/visits/by-date-range",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetPendingVisits",
+    "RelativePath": "api/Admin/visits/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AdminController",
+    "Method": "GetRecentVisits",
+    "RelativePath": "api/Admin/visits/recent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Auth/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Auth/confirm-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OrangeSiteInspector.API.Controllers.ConfirmEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.LoginResponseDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.LoginResponseDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUserDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OrangeSiteInspector.API.Controllers.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetAdminDashboard",
+    "RelativePath": "api/Dashboard/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.AdminDashboardDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetDashboardCharts",
+    "RelativePath": "api/Dashboard/charts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "siteId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.DashboardChartDataDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetEngineerDashboard",
+    "RelativePath": "api/Dashboard/engineer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.EngineerDashboardDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetLatestVisits",
+    "RelativePath": "api/Dashboard/latest-visits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetMyDashboard",
+    "RelativePath": "api/Dashboard/my-dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetDashboardOverview",
+    "RelativePath": "api/Dashboard/overview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.DashboardOverviewDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetRecentSites",
+    "RelativePath": "api/Dashboard/recent-sites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetSitesByVisits",
+    "RelativePath": "api/Dashboard/sites-by-visits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetDashboardStats",
+    "RelativePath": "api/Dashboard/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "siteId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.DashboardStatsDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetTopSites",
+    "RelativePath": "api/Dashboard/top-sites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetVisitsByDay",
+    "RelativePath": "api/Dashboard/visits-by-day",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetVisitsByEngineer",
+    "RelativePath": "api/Dashboard/visits-by-engineer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetVisitsByMonth",
+    "RelativePath": "api/Dashboard/visits-by-month",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "months",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.DashboardController",
+    "Method": "GetVisitsByStatus",
+    "RelativePath": "api/Dashboard/visits-by-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ChartDataPointDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.FileUploadController",
+    "Method": "UploadVisitImage",
+    "RelativePath": "api/FileUpload/visit-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "componentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.FileUploadResultDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.FileUploadResultDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.FileUploadController",
+    "Method": "DeleteVisitImage",
+    "RelativePath": "api/FileUpload/visit-image",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.FileUploadController",
+    "Method": "UploadVisitImages",
+    "RelativePath": "api/FileUpload/visit-images",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "componentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.API.Controllers.FileUploadResultDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.API.Controllers.FileUploadResultDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "api/Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.HealthStatusDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.HealthController",
+    "Method": "GetDetailed",
+    "RelativePath": "api/Health/detailed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.DetailedHealthStatusDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "GetAllGroups",
+    "RelativePath": "api/Orama/groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/Orama/groups",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "GetItemsByGroup",
+    "RelativePath": "api/Orama/groups/{groupId}/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "GetGroupById",
+    "RelativePath": "api/Orama/groups/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "UpdateGroup",
+    "RelativePath": "api/Orama/groups/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaGroupDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "DeleteGroup",
+    "RelativePath": "api/Orama/groups/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "GetAllItems",
+    "RelativePath": "api/Orama/items",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "CreateItem",
+    "RelativePath": "api/Orama/items",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateOramaItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "GetItemById",
+    "RelativePath": "api/Orama/items/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Orama/items/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateOramaItemRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.OramaItemDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.OramaController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Orama/items/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Sites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.PagedResultDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "Create",
+    "RelativePath": "api/Sites",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createSiteDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateSiteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "GetById",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "Update",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateSiteDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateSiteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "Delete",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Sites/{id}/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "GetByLocation",
+    "RelativePath": "api/Sites/by-location/{location}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "CodeExists",
+    "RelativePath": "api/Sites/code-exists/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.SitesController",
+    "Method": "Search",
+    "RelativePath": "api/Sites/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.SiteSearchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.PagedResultDto\u00601[[OrangeSiteInspector.Application.DTOs.SiteDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.TestController",
+    "Method": "AdminOnly",
+    "RelativePath": "api/Test/admin-only",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.TestController",
+    "Method": "AdminOrEngineer",
+    "RelativePath": "api/Test/admin-or-engineer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.TestController",
+    "Method": "EngineerOnly",
+    "RelativePath": "api/Test/engineer-only",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.TestController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/Test/user-info",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.UserInfoDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.TestController",
+    "Method": "CheckVisitOwnership",
+    "RelativePath": "api/Test/visit-ownership/{visitId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.API.Controllers.OwnershipCheckDto, OrangeSiteInspector.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.PagedResultDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "GetById",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "Delete",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "GetByRole",
+    "RelativePath": "api/Users/by-role/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.UserDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "CheckEmailExists",
+    "RelativePath": "api/Users/check-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "CheckUserNameExists",
+    "RelativePath": "api/Users/check-username",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Users/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserProfileDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserProfileDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Users/profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateProfileDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserProfileDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserProfileDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.UserProfileDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.UsersController",
+    "Method": "UpdateTheme",
+    "RelativePath": "api/Users/theme",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "themeDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateThemeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "Create",
+    "RelativePath": "api/VisitComponents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateVisitComponentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "GetById",
+    "RelativePath": "api/VisitComponents/{componentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "Update",
+    "RelativePath": "api/VisitComponents/{componentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateVisitComponentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "Delete",
+    "RelativePath": "api/VisitComponents/{componentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/VisitComponents/{componentId}/image/{imageType}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageType",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "BulkUploadImages",
+    "RelativePath": "api/VisitComponents/bulk-upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "VisitId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Components",
+        "Type": "System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.ComponentImageUploadDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "UploadImage",
+    "RelativePath": "api/VisitComponents/upload-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ComponentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "GetByVisitId",
+    "RelativePath": "api/VisitComponents/visit/{visitId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "GenerateFinalReport",
+    "RelativePath": "api/VisitComponents/visit/{visitId}/final-report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitFinalReportDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitComponentsController",
+    "Method": "GenerateVisitReport",
+    "RelativePath": "api/VisitComponents/visit/{visitId}/report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitReportDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Visits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.PagedResultDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "Create",
+    "RelativePath": "api/Visits",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createVisitDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateVisitDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetById",
+    "RelativePath": "api/Visits/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "Delete",
+    "RelativePath": "api/Visits/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Visits/{id}/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDetailDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Visits/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateStatusDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateVisitStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetComponents",
+    "RelativePath": "api/Visits/{visitId}/components",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetByDateRange",
+    "RelativePath": "api/Visits/by-date-range",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetBySite",
+    "RelativePath": "api/Visits/by-site/{siteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetByStatus",
+    "RelativePath": "api/Visits/by-status/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "AddComponent",
+    "RelativePath": "api/Visits/components",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createComponentDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.CreateVisitComponentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "UpdateComponent",
+    "RelativePath": "api/Visits/components/{componentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateComponentDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.UpdateVisitComponentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitComponentDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "RemoveComponent",
+    "RelativePath": "api/Visits/components/{componentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "componentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "AddBulkComponents",
+    "RelativePath": "api/Visits/components/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bulkCreateDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.BulkCreateVisitComponentsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "GetMyVisits",
+    "RelativePath": "api/Visits/my-visits",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[System.Collections.Generic.List\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "OrangeSiteInspector.API.Controllers.VisitsController",
+    "Method": "Search",
+    "RelativePath": "api/Visits/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchDto",
+        "Type": "OrangeSiteInspector.Application.DTOs.VisitSearchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OrangeSiteInspector.Application.DTOs.ApiResponseDto\u00601[[OrangeSiteInspector.Application.DTOs.PagedResultDto\u00601[[OrangeSiteInspector.Application.DTOs.VisitDto, OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], OrangeSiteInspector.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

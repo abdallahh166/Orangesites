@@ -1,0 +1,34 @@
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.csproj.AssemblyReference.cache
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.AssemblyInfoInputs.cache
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.AssemblyInfo.cs
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.csproj.CoreCompileInputs.cache
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.deps.json
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.pdb
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Domain.pdb
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSi.FE9EE985.Up2Date
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\refint\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.pdb
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\ref\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\source\repos\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Infrastructure.pdb
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\refint\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.pdb
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.csproj.AssemblyReference.cache
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.AssemblyInfoInputs.cache
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.AssemblyInfo.cs
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSiteInspector.Application.csproj.CoreCompileInputs.cache
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.deps.json
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Application.pdb
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Domain.pdb
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\bin\Debug\net9.0\OrangeSiteInspector.Infrastructure.pdb
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\OrangeSi.FE9EE985.Up2Date
+C:\Users\Abdallah\Desktop\On Edit for full\OrangeSiteInspector\OrangeSiteInspector.Application\obj\Debug\net9.0\ref\OrangeSiteInspector.Application.dll

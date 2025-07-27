@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrangeSiteInspector.API</name>
+    </assembly>
+    <members>
+        <member name="T:OrangeSiteInspector.API.Controllers.AdminController">
+            <summary>
+            Administrative endpoints for managing the system
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetPendingVisits">
+            <summary>
+            Get all pending visits for review
+            </summary>
+            <returns>List of pending visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.AcceptVisit(System.Int32)">
+            <summary>
+            Accept a visit
+            </summary>
+            <param name="visitId">Visit ID</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.RejectVisit(System.Int32)">
+            <summary>
+            Reject a visit
+            </summary>
+            <param name="visitId">Visit ID</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetDashboardStats">
+            <summary>
+            Get dashboard statistics (legacy endpoint - use /api/dashboard/stats instead)
+            </summary>
+            <returns>Dashboard statistics</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetRecentVisits(System.Int32)">
+            <summary>
+            Get recent visits for admin review
+            </summary>
+            <param name="count">Number of recent visits to retrieve</param>
+            <returns>List of recent visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetVisitsByDateRange(System.DateTime,System.DateTime)">
+            <summary>
+            Get visits by date range for admin review
+            </summary>
+            <param name="startDate">Start date</param>
+            <param name="endDate">End date</param>
+            <returns>List of visits in date range</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetAllOramaGroups">
+            <summary>
+            Get all Orama groups for management
+            </summary>
+            <returns>List of Orama groups</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.GetAllOramaItems">
+            <summary>
+            Get all Orama items for management
+            </summary>
+            <returns>List of Orama items</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.CreateOramaGroup(System.String)">
+            <summary>
+            Create new Orama group
+            </summary>
+            <param name="name">Group name</param>
+            <returns>Created group information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AdminController.CreateOramaItem(OrangeSiteInspector.Application.DTOs.CreateOramaItemRequest)">
+            <summary>
+            Create new Orama item
+            </summary>
+            <param name="request">Item creation request</param>
+            <returns>Created item information</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.AuthController">
+            <summary>
+            Authentication endpoints for user registration and login
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.Register(OrangeSiteInspector.Application.DTOs.CreateUserDto)">
+            <summary>
+            Register a new user
+            </summary>
+            <param name="createUserDto">User registration data</param>
+            <returns>Created user information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.Login(OrangeSiteInspector.Application.DTOs.LoginDto)">
+            <summary>
+            Login with email and password
+            </summary>
+            <param name="loginDto">Login credentials</param>
+            <returns>JWT token and user information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.ChangePassword(OrangeSiteInspector.Application.DTOs.ChangePasswordDto)">
+            <summary>
+            Change user password
+            </summary>
+            <param name="changePasswordDto">Password change data</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.RefreshToken(OrangeSiteInspector.Application.DTOs.RefreshTokenDto)">
+            <summary>
+            Refreshes access token using refresh token
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.ForgotPassword(System.String)">
+            <summary>
+            Request password reset
+            </summary>
+            <param name="email">User email</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.ResetPassword(OrangeSiteInspector.Application.DTOs.ResetPasswordDto)">
+            <summary>
+            Reset password with token
+            </summary>
+            <param name="request">Reset password request containing email, token, and new password</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.ConfirmEmail(OrangeSiteInspector.API.Controllers.ConfirmEmailRequest)">
+            <summary>
+            Confirm email address
+            </summary>
+            <param name="request">Confirm email request containing user ID and token</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.AuthController.Logout(LogoutDto)">
+            <summary>
+            Logs out the current user
+            </summary>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.ConfirmEmailRequest">
+            <summary>
+            Request body for confirming a user's email address.
+            </summary>
+        </member>
+        <member name="P:OrangeSiteInspector.API.Controllers.ConfirmEmailRequest.UserId">
+            <summary>User ID to confirm.</summary>
+        </member>
+        <member name="P:OrangeSiteInspector.API.Controllers.ConfirmEmailRequest.Token">
+            <summary>Confirmation token sent to the user's email.</summary>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.LogoutRequest">
+            <summary>
+            Request body for logging out a user (invalidating refresh token).
+            </summary>
+        </member>
+        <member name="P:OrangeSiteInspector.API.Controllers.LogoutRequest.RefreshToken">
+            <summary>The refresh token to invalidate.</summary>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.DashboardController">
+            <summary>
+            Dashboard analytics and statistics endpoints
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetDashboardOverview">
+            <summary>
+            Get dashboard overview (Admin only)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetEngineerDashboard">
+            <summary>
+            Get engineer dashboard data (filtered for current user)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetAdminDashboard">
+            <summary>
+            Get admin dashboard data (global view)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetDashboardStats(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Nullable{OrangeSiteInspector.Domain.Enums.VisitStatus})">
+            <summary>
+            Get dashboard statistics with optional filtering
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetDashboardCharts(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Nullable{OrangeSiteInspector.Domain.Enums.VisitStatus})">
+            <summary>
+            Get dashboard charts with optional filtering
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetLatestVisits(System.Int32,System.String)">
+            <summary>
+            Get latest visits with optional filtering
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetRecentSites(System.Int32,System.String)">
+            <summary>
+            Get recent sites with optional filtering
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetVisitsByStatus(System.String)">
+            <summary>
+            Get visits by status chart data
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetVisitsByMonth(System.Int32,System.String)">
+            <summary>
+            Get visits by month chart data
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetVisitsByDay(System.Int32,System.String)">
+            <summary>
+            Get visits by day chart data
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetTopSites(System.Int32,System.String)">
+            <summary>
+            Get top sites by visit count
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetVisitsByEngineer">
+            <summary>
+            Get visits by engineer (Admin only)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetSitesByVisits(System.Int32)">
+            <summary>
+            Get sites by visit count (Admin only)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.DashboardController.GetMyDashboard">
+            <summary>
+            Get role-specific dashboard data
+            </summary>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.FileUploadController">
+            <summary>
+            File upload endpoints for visit images
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.FileUploadController.UploadVisitImage(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Upload visit image
+            </summary>
+            <param name="file">Image file</param>
+            <param name="visitId">Visit ID</param>
+            <param name="componentId">Component ID (optional)</param>
+            <returns>Upload result with file path</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.FileUploadController.UploadVisitImages(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Upload multiple visit images
+            </summary>
+            <param name="files">Image files</param>
+            <param name="visitId">Visit ID</param>
+            <param name="componentId">Component ID (optional)</param>
+            <returns>Upload results</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.FileUploadController.DeleteVisitImage(System.String,System.Int32)">
+            <summary>
+            Delete visit image
+            </summary>
+            <param name="fileName">File name</param>
+            <param name="visitId">Visit ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.HealthController">
+            <summary>
+            Health check endpoints for API monitoring
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.HealthController.Get">
+            <summary>
+            Basic health check
+            </summary>
+            <returns>API status</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.HealthController.GetDetailed">
+            <summary>
+            Detailed health check with database connectivity
+            </summary>
+            <returns>Detailed health status</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.OramaController">
+            <summary>
+            Controller for managing Orama groups and items (equipment/inventory).
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.#ctor(OrangeSiteInspector.Application.Interfaces.IOramaService)">
+            <summary>
+            Constructor for OramaController.
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.GetAllGroups">
+            <summary>
+            Gets all Orama groups.
+            </summary>
+            <returns>List of Orama groups.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.GetGroupById(System.Int32)">
+            <summary>
+            Gets a specific Orama group by ID.
+            </summary>
+            <param name="id">Group ID</param>
+            <returns>Orama group details.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.CreateGroup(OrangeSiteInspector.Application.DTOs.CreateOramaGroupDto)">
+            <summary>
+            Creates a new Orama group.
+            </summary>
+            <param name="request">Group creation data</param>
+            <returns>The created Orama group.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.UpdateGroup(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateOramaGroupDto)">
+            <summary>
+            Updates an existing Orama group.
+            </summary>
+            <param name="id">Group ID</param>
+            <param name="request">Group update data</param>
+            <returns>The updated Orama group.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.DeleteGroup(System.Int32)">
+            <summary>
+            Deletes an Orama group by ID.
+            </summary>
+            <param name="id">Group ID</param>
+            <returns>Success or error response.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.GetAllItems">
+            <summary>
+            Gets all Orama items.
+            </summary>
+            <returns>List of Orama items.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.GetItemsByGroupId(System.Int32)">
+            <summary>
+            Gets all Orama items for a specific group.
+            </summary>
+            <param name="groupId">Group ID</param>
+            <returns>List of Orama items in the group.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.GetItemById(System.Int32)">
+            <summary>
+            Gets a specific Orama item by ID.
+            </summary>
+            <param name="id">Item ID</param>
+            <returns>Orama item details.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.CreateItem(OrangeSiteInspector.Application.DTOs.CreateOramaItemRequest)">
+            <summary>
+            Creates a new Orama item.
+            </summary>
+            <param name="request">Item creation data</param>
+            <returns>The created Orama item.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.UpdateItem(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateOramaItemRequest)">
+            <summary>
+            Updates an existing Orama item.
+            </summary>
+            <param name="id">Item ID</param>
+            <param name="request">Item update data</param>
+            <returns>The updated Orama item.</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.OramaController.DeleteItem(System.Int32)">
+            <summary>
+            Deletes an Orama item by ID.
+            </summary>
+            <param name="id">Item ID</param>
+            <returns>Success or error response.</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.SitesController">
+            <summary>
+            Site management endpoints
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.#ctor(OrangeSiteInspector.Application.Interfaces.ISiteService,OrangeSiteInspector.Application.Interfaces.IVisitService)">
+            <summary>
+            Constructor for SitesController.
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all sites with pagination (filtered by role)
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns>Paginated list of sites</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.Search(OrangeSiteInspector.Application.DTOs.SiteSearchDto)">
+            <summary>
+            Search sites with filters (role-based access)
+            </summary>
+            <param name="searchDto">Search criteria</param>
+            <returns>Filtered and paginated list of sites</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetById(System.Int32)">
+            <summary>
+            Get site by ID (with access control)
+            </summary>
+            <param name="id">Site ID</param>
+            <returns>Site information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetDetails(System.Int32)">
+            <summary>
+            Get site details with recent visits (with access control)
+            </summary>
+            <param name="id">Site ID</param>
+            <returns>Site details with recent visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.Create(OrangeSiteInspector.Application.DTOs.CreateSiteDto)">
+            <summary>
+            Create a new site (Admin only)
+            </summary>
+            <param name="createSiteDto">Site creation data</param>
+            <returns>Created site information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.Update(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateSiteDto)">
+            <summary>
+            Update site information (Admin only)
+            </summary>
+            <param name="id">Site ID</param>
+            <param name="updateSiteDto">Updated site information</param>
+            <returns>Updated site information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.Delete(System.Int32)">
+            <summary>
+            Delete site (Admin only)
+            </summary>
+            <param name="id">Site ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.CodeExists(System.String)">
+            <summary>
+            Check if site code exists (Admin only)
+            </summary>
+            <param name="code">Site code</param>
+            <returns>Boolean indicating if code exists</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetByLocation(System.String)">
+            <summary>
+            Get sites by location (with access control)
+            </summary>
+            <param name="location">Location to search</param>
+            <returns>List of sites in the specified location</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.UpdateStatus(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateSiteStatusDto)">
+            <summary>
+            Update site status (Admin only)
+            </summary>
+            <param name="id">Site ID</param>
+            <param name="updateStatusDto">Status update data</param>
+            <returns>Updated site information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetStatistics">
+            <summary>
+            Get site statistics (Admin only)
+            </summary>
+            <returns>Site statistics and analytics</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetByStatus(OrangeSiteInspector.Domain.Entities.SiteStatus)">
+            <summary>
+            Get sites by status (Admin only)
+            </summary>
+            <param name="status">Site status to filter by</param>
+            <returns>List of sites with the specified status</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.IsAccessible(System.Int32)">
+            <summary>
+            Check if site is accessible for current user
+            </summary>
+            <param name="id">Site ID</param>
+            <returns>Boolean indicating if site is accessible</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetSitesNeedingMaintenance">
+            <summary>
+            Get sites needing maintenance (Admin only)
+            </summary>
+            <returns>List of sites in maintenance status</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.BulkUpdateStatus(OrangeSiteInspector.API.Controllers.BulkUpdateSiteStatusDto)">
+            <summary>
+            Bulk update site status (Admin only)
+            </summary>
+            <param name="bulkUpdateDto">Bulk update data</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.SitesController.GetAdminSites(System.Int32,System.Int32,System.Nullable{OrangeSiteInspector.Domain.Entities.SiteStatus},System.String)">
+            <summary>
+            Get sites with pagination and advanced filtering (Admin only)
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Page size</param>
+            <param name="status">Filter by status</param>
+            <param name="location">Filter by location</param>
+            <returns>Paginated list of sites with filters</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.TestController">
+            <summary>
+            Test endpoints for verifying authorization policies
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.TestController.AdminOnly">
+            <summary>
+            Test admin-only access
+            </summary>
+            <returns>Success message for admin</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.TestController.EngineerOnly">
+            <summary>
+            Test engineer-only access
+            </summary>
+            <returns>Success message for engineer</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.TestController.AdminOrEngineer">
+            <summary>
+            Test admin or engineer access
+            </summary>
+            <returns>Success message for admin or engineer</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.TestController.GetUserInfo">
+            <summary>
+            Test current user info
+            </summary>
+            <returns>Current user information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.TestController.CheckVisitOwnership(System.Int32)">
+            <summary>
+            Test visit ownership check
+            </summary>
+            <param name="visitId">Visit ID to check</param>
+            <returns>Ownership check result</returns>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.UsersController">
+            <summary>
+            User management endpoints
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetProfile">
+            <summary>
+            Get current user profile
+            </summary>
+            <returns>Current user information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.UpdateProfile(OrangeSiteInspector.Application.DTOs.UpdateProfileDto)">
+            <summary>
+            Update current user profile (Engineer can only edit own profile)
+            </summary>
+            <param name="updateProfileDto">Updated profile information</param>
+            <returns>Updated profile information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.UpdateTheme(OrangeSiteInspector.Application.DTOs.UpdateThemeDto)">
+            <summary>
+            Update theme preference
+            </summary>
+            <param name="themeDto">Theme preference</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.CheckEmailExists(System.String)">
+            <summary>
+            Check if email exists
+            </summary>
+            <param name="email">Email to check</param>
+            <returns>True if email exists</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.CheckUserNameExists(System.String)">
+            <summary>
+            Check if username exists
+            </summary>
+            <param name="userName">Username to check</param>
+            <returns>True if username exists</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetById(System.String)">
+            <summary>
+            Get user by ID (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all users with pagination (Admin only)
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns>Paginated list of users</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetByRole(System.String)">
+            <summary>
+            Get users by role (Admin only)
+            </summary>
+            <param name="role">User role</param>
+            <returns>List of users with specified role</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.UpdateUser(System.String,OrangeSiteInspector.Application.DTOs.UpdateUserDto)">
+            <summary>
+            Update user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <param name="updateUserDto">Updated user information</param>
+            <returns>Updated user information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.Delete(System.String)">
+            <summary>
+            Delete user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetUserStatus(System.String)">
+            <summary>
+            Get user status (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User status information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.UpdateUserStatus(System.String,OrangeSiteInspector.Application.DTOs.UpdateUserStatusDto)">
+            <summary>
+            Update user status (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <param name="statusDto">Status update data</param>
+            <returns>Updated user status</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.SearchUsers(OrangeSiteInspector.Application.DTOs.UserSearchDto)">
+            <summary>
+            Search users with filters (Admin only)
+            </summary>
+            <param name="searchDto">Search criteria</param>
+            <returns>Filtered and paginated list of users</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetUserStatistics">
+            <summary>
+            Get user statistics (Admin only)
+            </summary>
+            <returns>User statistics and analytics</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.GetUserActivity(System.Int32,System.Int32)">
+            <summary>
+            Get user activity (Admin only)
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns>User activity information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.BulkUserOperation(OrangeSiteInspector.Application.DTOs.BulkUserOperationDto)">
+            <summary>
+            Perform bulk user operations (Admin only)
+            </summary>
+            <param name="bulkOperationDto">Bulk operation data</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.LockUser(System.String,System.Nullable{System.DateTime})">
+            <summary>
+            Lock user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <param name="lockoutEnd">Lockout end time (optional)</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.UnlockUser(System.String)">
+            <summary>
+            Unlock user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.ActivateUser(System.String)">
+            <summary>
+            Activate user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.DeactivateUser(System.String)">
+            <summary>
+            Deactivate user (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.UsersController.ResetLoginAttempts(System.String)">
+            <summary>
+            Reset user login attempts (Admin only)
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.GetByVisitId(System.Int32)">
+            <summary>
+            Get all components for a specific visit
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.GetById(System.Int32)">
+            <summary>
+            Get a specific component by ID
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.Create(OrangeSiteInspector.Application.DTOs.CreateVisitComponentDto)">
+            <summary>
+            Create a new component for a visit
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.Update(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateVisitComponentDto)">
+            <summary>
+            Update a component (comment only)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.Delete(System.Int32)">
+            <summary>
+            Delete a component
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.UploadImage(OrangeSiteInspector.Application.DTOs.UploadComponentImageDto)">
+            <summary>
+            Upload an image for a component (before or after)
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.BulkUploadImages(OrangeSiteInspector.Application.DTOs.BulkUploadImagesDto)">
+            <summary>
+            Bulk upload images for multiple components
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.DeleteImage(System.Int32,System.String)">
+            <summary>
+            Delete an image from a component
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.GenerateVisitReport(System.Int32)">
+            <summary>
+            Generate a full visit report with before/after images
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitComponentsController.GenerateFinalReport(System.Int32)">
+            <summary>
+            Generate a final visit report (after images only)
+            </summary>
+        </member>
+        <member name="T:OrangeSiteInspector.API.Controllers.VisitsController">
+            <summary>
+            Visit management endpoints
+            </summary>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all visits with pagination (filtered by role)
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns>Paginated list of visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.Search(OrangeSiteInspector.Application.DTOs.VisitSearchDto)">
+            <summary>
+            Search visits with filters (role-based access)
+            </summary>
+            <param name="searchDto">Search criteria</param>
+            <returns>Filtered and paginated list of visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetById(System.Int32)">
+            <summary>
+            Get visit by ID (with ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetDetails(System.Int32)">
+            <summary>
+            Get visit details with components (with ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Visit details with components</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.Create(OrangeSiteInspector.Application.DTOs.CreateVisitDto)">
+            <summary>
+            Create a new visit (Engineer only)
+            </summary>
+            <param name="createVisitDto">Visit creation data</param>
+            <returns>Created visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.UpdateStatus(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateVisitStatusDto)">
+            <summary>
+            Update visit status (Admin only)
+            </summary>
+            <param name="id">Visit ID</param>
+            <param name="updateStatusDto">Status update data</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.Delete(System.Int32)">
+            <summary>
+            Delete visit (Admin only, or Engineer can delete their own)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetBySite(System.Int32)">
+            <summary>
+            Get visits by site ID (with access control)
+            </summary>
+            <param name="siteId">Site ID</param>
+            <returns>List of visits for the site</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetMyVisits">
+            <summary>
+            Get current user's visits
+            </summary>
+            <returns>List of current user's visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetByStatus(System.String)">
+            <summary>
+            Get visits by status (Admin only)
+            </summary>
+            <param name="status">Visit status</param>
+            <returns>List of visits with specified status</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetByDateRange(System.DateTime,System.DateTime)">
+            <summary>
+            Get visits by date range (Admin only)
+            </summary>
+            <param name="startDate">Start date</param>
+            <param name="endDate">End date</param>
+            <returns>List of visits in date range</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.Update(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateVisitDto)">
+            <summary>
+            Update visit details (ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <param name="updateVisitDto">Visit update data</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.StartVisit(System.Int32,OrangeSiteInspector.Application.DTOs.StartVisitDto)">
+            <summary>
+            Start a visit (Engineer only, ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <param name="startVisitDto">Start visit data</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.CompleteVisit(System.Int32,OrangeSiteInspector.Application.DTOs.CompleteVisitDto)">
+            <summary>
+            Complete a visit (Engineer only, ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <param name="completeVisitDto">Complete visit data</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetOverdueVisits">
+            <summary>
+            Get overdue visits (Admin only)
+            </summary>
+            <returns>List of overdue visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetScheduledVisits(System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get scheduled visits (Admin only)
+            </summary>
+            <param name="startDate">Start date filter</param>
+            <param name="endDate">End date filter</param>
+            <returns>List of scheduled visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetByPriority(System.String)">
+            <summary>
+            Get visits by priority (Admin only)
+            </summary>
+            <param name="priority">Visit priority</param>
+            <returns>List of visits with specified priority</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetByType(System.String)">
+            <summary>
+            Get visits by type (Admin only)
+            </summary>
+            <param name="type">Visit type</param>
+            <returns>List of visits with specified type</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetStatistics(System.Int32)">
+            <summary>
+            Get visit statistics (ownership check)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Visit statistics</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.BulkUpdateStatus(OrangeSiteInspector.Application.DTOs.BulkUpdateVisitStatusDto)">
+            <summary>
+            Bulk update visit status (Admin only)
+            </summary>
+            <param name="bulkUpdateDto">Bulk update data</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetMySchedule(System.Nullable{System.DateTime})">
+            <summary>
+            Get engineer schedule (Engineer only)
+            </summary>
+            <param name="date">Date filter (optional)</param>
+            <returns>Engineer's scheduled visits</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.RescheduleVisit(System.Int32,System.DateTime)">
+            <summary>
+            Reschedule visit (Admin only)
+            </summary>
+            <param name="id">Visit ID</param>
+            <param name="newScheduledDate">New scheduled date</param>
+            <returns>Updated visit information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetVisitsNeedingAttention">
+            <summary>
+            Get visits needing attention (Admin only)
+            </summary>
+            <returns>List of visits needing attention</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.CanStartVisit(System.Int32)">
+            <summary>
+            Check if visit can be started (Engineer only)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Boolean indicating if visit can be started</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.CanCompleteVisit(System.Int32)">
+            <summary>
+            Check if visit can be completed (Engineer only)
+            </summary>
+            <param name="id">Visit ID</param>
+            <returns>Boolean indicating if visit can be completed</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.GetComponents(System.Int32)">
+            <summary>
+            Get visit components (with ownership check)
+            </summary>
+            <param name="visitId">Visit ID</param>
+            <returns>List of visit components</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.AddComponent(OrangeSiteInspector.Application.DTOs.CreateVisitComponentDto)">
+            <summary>
+            Add component to visit (with ownership check)
+            </summary>
+            <param name="createComponentDto">Component creation data</param>
+            <returns>Created component information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.UpdateComponent(System.Int32,OrangeSiteInspector.Application.DTOs.UpdateVisitComponentDto)">
+            <summary>
+            Update visit component (with ownership check)
+            </summary>
+            <param name="componentId">Component ID</param>
+            <param name="updateComponentDto">Component update data</param>
+            <returns>Updated component information</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.RemoveComponent(System.Int32)">
+            <summary>
+            Remove component from visit (with ownership check)
+            </summary>
+            <param name="componentId">Component ID</param>
+            <returns>Success message</returns>
+        </member>
+        <member name="M:OrangeSiteInspector.API.Controllers.VisitsController.AddBulkComponents(OrangeSiteInspector.Application.DTOs.BulkCreateVisitComponentsDto)">
+            <summary>
+            Add multiple components to visit (with ownership check)
+            </summary>
+            <param name="bulkCreateDto">Bulk component creation data</param>
+            <returns>Success message</returns>
+        </member>
+    </members>
+</doc>
