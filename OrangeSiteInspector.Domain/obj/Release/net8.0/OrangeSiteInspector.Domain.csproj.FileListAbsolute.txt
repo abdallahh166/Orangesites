@@ -1,0 +1,13 @@
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\bin\Release\net8.0\OrangeSiteInspector.Domain.deps.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\bin\Release\net8.0\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\bin\Release\net8.0\OrangeSiteInspector.Domain.pdb
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.csproj.AssemblyReference.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.AssemblyInfoInputs.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.AssemblyInfo.cs
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.sourcelink.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\refint\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\OrangeSiteInspector.Domain.pdb
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Release\net8.0\ref\OrangeSiteInspector.Domain.dll

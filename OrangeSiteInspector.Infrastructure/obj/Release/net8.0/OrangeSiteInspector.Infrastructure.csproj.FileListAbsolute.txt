@@ -1,0 +1,16 @@
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\bin\Release\net8.0\OrangeSiteInspector.Infrastructure.deps.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\bin\Release\net8.0\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\bin\Release\net8.0\OrangeSiteInspector.Infrastructure.pdb
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\bin\Release\net8.0\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\bin\Release\net8.0\OrangeSiteInspector.Domain.pdb
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.AssemblyInfo.cs
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.sourcelink.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSi.4176C56E.Up2Date
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\refint\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\OrangeSiteInspector.Infrastructure.pdb
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Release\net8.0\ref\OrangeSiteInspector.Infrastructure.dll

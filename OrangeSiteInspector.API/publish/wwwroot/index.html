@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Site Inspector API</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .api-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .endpoints {
+            margin-top: 20px;
+        }
+        .endpoint {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #ff6600;
+        }
+        .method {
+            font-weight: bold;
+            color: #ff6600;
+        }
+        .swagger-link {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .swagger-link:hover {
+            background-color: #e55a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Orange Site Inspector API</h1>
+        
+        <div class="api-info">
+            <h2>Welcome to the Orange Site Inspector API</h2>
+            <p>This API provides endpoints for managing site inspections, visits, and user authentication.</p>
+        </div>
+
+        <div class="endpoints">
+            <h3>Available Endpoints:</h3>
+            
+            <div class="endpoint">
+                <span class="method">POST</span> /api/auth/register - Register a new user
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">POST</span> /api/auth/login - Login with credentials
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/users/profile - Get current user profile
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/sites - Get all sites
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">POST</span> /api/visits - Create a new visit
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">GET</span> /api/admin/visits/pending - Get pending visits (Admin only)
+            </div>
+            
+            <div class="endpoint">
+                <span class="method">POST</span> /api/fileupload/visit-image - Upload visit images
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="/swagger" class="swagger-link">View API Documentation (Swagger)</a>
+        </div>
+    </div>
+</body>
+</html> 
