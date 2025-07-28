@@ -323,3 +323,11 @@ C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\obj\Debug\net8.0\OrangeSit
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\obj\Debug\net8.0\OrangeSiteInspector.API.pdb
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\obj\Debug\net8.0\OrangeSiteInspector.API.genruntimeconfig.cache
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\obj\Debug\net8.0\ref\OrangeSiteInspector.API.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\web.config
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\OrangeSiteInspector.API.deps.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\OrangeSiteInspector.API.runtimeconfig.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\bin\Debug\net8.0\publish\OrangeSiteInspector.API.staticwebassets.endpoints.json
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.API\obj\Debug\net8.0\OrangeSiteInspector.API.sourcelink.json

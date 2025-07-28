@@ -60,7 +60,7 @@ builder.Services.AddCors(options =>
     // Production CORS policy - update the origin as needed
     options.AddPolicy("ProductionPolicy", policy =>
     {
-        policy.WithOrigins("https://your-production-domain.com") // TODO: Replace with your real domain
+        policy.WithOrigins("http://se7en.runasp.net/") // TODO: Replace with your real domain
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();

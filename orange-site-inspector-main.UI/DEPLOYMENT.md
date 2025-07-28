@@ -17,7 +17,7 @@ This guide covers deploying the Orange Site Inspector frontend to various platfo
 4. Import your GitHub repository
 5. Configure environment variables:
    ```
-   VITE_API_BASE_URL=https://your-backend-domain.com/api
+   VITE_API_BASE_URL=http://se7en.runasp.net/
    VITE_APP_ENV=production
    VITE_APP_VERSION=1.0.0
    ```

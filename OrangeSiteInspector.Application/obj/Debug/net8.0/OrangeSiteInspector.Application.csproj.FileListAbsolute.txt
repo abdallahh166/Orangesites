@@ -32,3 +32,4 @@ C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Application\obj\Debug\net8.0\O
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Application\obj\Debug\net8.0\refint\OrangeSiteInspector.Application.dll
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Application\obj\Debug\net8.0\OrangeSiteInspector.Application.pdb
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Application\obj\Debug\net8.0\ref\OrangeSiteInspector.Application.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Application\obj\Debug\net8.0\OrangeSiteInspector.Application.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrangeSiteInspector.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+537032f2d3ddde67412ae54e03fea01d7a10c5c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08a69c3b76c4b8220c36b80b337872a0da5e6c63")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrangeSiteInspector.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrangeSiteInspector.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -22,3 +22,4 @@ C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Debug\net8.0\Orange
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Debug\net8.0\refint\OrangeSiteInspector.Domain.dll
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Debug\net8.0\OrangeSiteInspector.Domain.pdb
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Debug\net8.0\ref\OrangeSiteInspector.Domain.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Domain\obj\Debug\net8.0\OrangeSiteInspector.Domain.sourcelink.json

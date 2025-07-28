@@ -11,4 +11,4 @@
   status = 200
 
 [context.production.environment]
-  VITE_API_BASE_URL = "http://se7en.runasp.net/"
+  VITE_API_BASE_URL = "https://se7en.runasp.net/"

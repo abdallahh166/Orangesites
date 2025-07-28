@@ -28,3 +28,4 @@ C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Debug\net8.
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Debug\net8.0\refint\OrangeSiteInspector.Infrastructure.dll
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Debug\net8.0\OrangeSiteInspector.Infrastructure.pdb
 C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Debug\net8.0\ref\OrangeSiteInspector.Infrastructure.dll
+C:\Users\Abdallah\Desktop\ORN\OrangeSiteInspector.Infrastructure\obj\Debug\net8.0\OrangeSiteInspector.Infrastructure.sourcelink.json
