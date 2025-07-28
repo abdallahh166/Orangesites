@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrangeSiteInspector.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7096813683eaf938aeb82bee2c0702de77eb8a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+537032f2d3ddde67412ae54e03fea01d7a10c5c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrangeSiteInspector.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrangeSiteInspector.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
